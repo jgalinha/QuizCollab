@@ -10,9 +10,10 @@ public class CreateFieldTest
         // Arrange
         var name = new Name("field name");
         var description = new Description("field description");
+        var userId = Guid.NewGuid();
 
         // Act
-        var field = Field.Create(name, description);
+        var field = Field.Create(name, description, userId);
 
         // Assert
         Assert.NotNull(field);
