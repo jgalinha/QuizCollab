@@ -1,4 +1,8 @@
-﻿using QuizCollab.Domain.Abstractions;
+﻿// A C# class representing a log entity with creation method and domain event handling.
+
+using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
+using QuizCollab.Domain.Abstractions;
 using QuizCollab.Domain.Logs.Events;
 
 namespace QuizCollab.Domain.Logs;
@@ -13,10 +17,14 @@ public sealed class Log : Entity
         Details = details;
     }
 
-    public Guid EntityId { get; }
-    public Guid UserId { get; }
-    public Operation Operation { get; }
-    public Details Details { get; }
+    [Key] public Guid EntityId { get; }
+
+    [ForeignKey("User")] public Guid UserId { get; }
+
+    [Required] public Operation Operation { get; }
+
+    [Required] public Details Details { get; }
+
     public DateTime CreatedAt { get; } = DateTime.UtcNow;
 
     public static Log Create(Guid entityId, Guid userId, Operation operation, Details details)
