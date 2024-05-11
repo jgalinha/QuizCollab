@@ -10,6 +10,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "QuizCollab.Domain.Tests", "
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "QuizCollab.Application", "QuizCollab.Application\QuizCollab.Application.csproj", "{AECE4F5A-741D-45B9-9055-DF6A4E0B14A5}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "QuizCollab.Infrastructure", "QuizCollab.Infrastructure\QuizCollab.Infrastructure.csproj", "{E8D142F4-1F41-4E0F-B3B1-E26BFB987FBA}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -19,6 +21,7 @@ Global
 		{54CEE934-E79F-41E3-A9B6-DDDA24A7613D} = {65709FC7-F6B7-43B9-8EB9-60739307DC01}
 		{980EA443-E98A-4C78-8B29-D4DF17C6D4A3} = {305777F9-1352-4609-863E-811553ACA95E}
 		{AECE4F5A-741D-45B9-9055-DF6A4E0B14A5} = {65709FC7-F6B7-43B9-8EB9-60739307DC01}
+		{E8D142F4-1F41-4E0F-B3B1-E26BFB987FBA} = {65709FC7-F6B7-43B9-8EB9-60739307DC01}
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
 		{54CEE934-E79F-41E3-A9B6-DDDA24A7613D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
@@ -33,5 +36,9 @@ Global
 		{AECE4F5A-741D-45B9-9055-DF6A4E0B14A5}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{AECE4F5A-741D-45B9-9055-DF6A4E0B14A5}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{AECE4F5A-741D-45B9-9055-DF6A4E0B14A5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E8D142F4-1F41-4E0F-B3B1-E26BFB987FBA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E8D142F4-1F41-4E0F-B3B1-E26BFB987FBA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E8D142F4-1F41-4E0F-B3B1-E26BFB987FBA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E8D142F4-1F41-4E0F-B3B1-E26BFB987FBA}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
