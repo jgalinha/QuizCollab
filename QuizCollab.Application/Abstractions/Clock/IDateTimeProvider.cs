@@ -1,6 +1,6 @@
 ﻿namespace QuizCollab.Application.Abstractions.Clock;
 
-public interface IDateTimeProvides
+public interface IDateTimeProvider
 {
     DateTime UtcNow { get; }
 }
